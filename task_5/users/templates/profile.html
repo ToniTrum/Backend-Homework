@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Привет, {{ user.username }}</h1>
+    <button><a href="{% url 'users:update' %}">Изменить данные</a></button>
+    <button><a href="{% url 'users:logout' %}">Выйти</a></button>
+{% endblock %}
